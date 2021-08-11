@@ -1,0 +1,80 @@
+package com.techment.assignmentsLogicBuild;
+
+//import com.techment.oopsAssignments.program5.Medicine;
+import java.util.*;
+
+class  Question 
+{
+	int questionId;
+ String question;
+ String option1;
+ String option2;
+ String option3;
+ String option4;
+ String correctAns;
+
+ public Question(int questionId,String question, String option1, String option2, String option3, String option4, String correctAns) {
+	super();
+	this.questionId = questionId; 
+	this.question = question;
+	this.option1 = option1;
+	this.option2 = option2;
+	this.option3 = option3;
+	this.option4 = option4;
+	this.correctAns = correctAns;
+}
+ 
+ 	
+ void displayCorrectAns(int ansUser) 
+ {	
+//	 if(this.correctAns==ansUser)
+//		 System.out.println("correct ans "+this.correctAns);	 
+//	 else
+//		 System.out.println("wrong ans");
+//	 	
+		
+	 
+ }
+
+
+@Override
+public String toString() {
+	return "(" + questionId + ")" + question + "\n\n" + option1 + "\n"
+			+ option2 + "\n" + option3 + "\n" + option4;// + "\n" + CorrectAns;
+}
+ 
+ 
+ 
+}
+
+
+public class QuizeGame {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+//		HashMap<int, Question> hm = new HashMap<int, Question>();
+//		HashMap hm = new HashMap();
+		
+		 HashMap<Integer, Question> hm1 = new HashMap<>();
+		 
+		Question[ ] question = new Question[3];
+		
+		question[0] = new Question(1,"Which of the following option leads to the portability and security of Java?","(A) Bytecode is executed by JVM","(B) The applet makes the Java code secure and portable","(C) Use of exception handling","(D) Dynamic binding between objects","(A)Bytecode is executed by JVM");
+		question[1] = new Question(2,"Which of the following is not a Java features?","(A)Dynamic","(B) Architecture Neutral","(C) Use of pointers","(D) Object-oriented","(C) Use of pointers");
+		question[2] = new Question(3,"_____ is used to find and fix bugs in the Java programs.","(A)JVM","(B) JRE","(C)JDK ","(D) JDB","(D) JDB");
+	
+		hm1.put(1,question[0]);
+		hm1.put(2,question[1]);
+		hm1.put(3,question[2]);
+		
+		
+		
+		System.out.println("\n"+hm1.put(1,question[0]));
+//		question[0].
+		
+		
+		
+	}
+
+}
